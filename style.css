@@ -313,3 +313,29 @@ display:block;
 font-size:.8rem;
 opacity:.7;
 }
+
+html, body{
+overflow-x:hidden;
+}
+
+@media (max-width:768px){
+
+nav{
+gap:15px;
+padding:10px 20px;
+font-size:14px;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+section{
+padding:80px 5%;
+}
+
+.countdown{
+gap:15px;
+}
+
+}
