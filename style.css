@@ -513,3 +513,135 @@ display:inline-flex;
 align-items:center;
 gap:5px;
 }
+
+@media (max-width:768px){
+
+section{
+padding:80px 6%;
+}
+
+h2{
+font-size:1.8rem;
+}
+
+}
+
+@media (max-width:768px){
+
+.countdown{
+gap:10px;
+}
+
+.countdown div{
+min-width:70px;
+padding:12px;
+}
+
+.countdown span{
+font-size:1.5rem;
+}
+
+}
+
+@media (max-width:768px){
+
+.music-float{
+bottom:130px;
+right:15px;
+}
+
+.whatsapp{
+bottom:20px;
+right:20px;
+}
+
+}
+
+@media (max-width:768px){
+
+form{
+width:100%;
+padding:0 10px;
+}
+
+input, textarea{
+font-size:16px;
+}
+
+}
+
+@media (max-width:768px){
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.gallery img{
+height:auto;
+}
+
+}
+
+@media (max-width:768px){
+
+.music-card{
+width:100%;
+max-width:320px;
+}
+
+.music-buttons{
+flex-direction:column;
+}
+
+.music-buttons a{
+width:100%;
+}
+
+}
+
+@media (max-width:768px){
+
+.nosotros-container{
+display:flex;
+flex-direction:column;
+gap:20px;
+align-items:center;
+}
+
+#nosotros img{
+max-width:220px;
+}
+
+}
+
+@media (max-width:768px){
+
+.hero h1{
+font-size:1.8rem;
+}
+
+.hero p{
+font-size:14px;
+line-height:1.6;
+}
+
+.hero{
+padding:0 15px;
+}
+
+}
+
+@media (max-width:768px){
+
+nav{
+flex-wrap:wrap;
+gap:12px;
+padding:12px;
+font-size:14px;
+}
+
+nav a{
+padding:5px 8px;
+}
+
+}
