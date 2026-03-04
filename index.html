@@ -41,7 +41,7 @@ Escuchar en todas las plataformas
 <section id="nosotros" class="dark reveal">
 <h2>Nosotros</h2>
 <div class="nosotros-container">
-<img src="https://i.imgur.com/vicLHSt.png" 
+<img src="https://i.imgur.com/rdRuYVe.png" 
 alt="Grupo norteño tocando en escenario con iluminación cálida">
 <div class="glass">
 <p>Grupo Encuentro Norteño representa el estilo original del regional mexicano.
@@ -61,6 +61,63 @@ style="border-radius:12px"
 loading="lazy"
 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
 </iframe>
+ 
+   <iframe
+src="https://open.spotify.com/embed/track/7oMsEHUGjmlrxA9Fy1w0S5"
+width="100%"
+height="80"
+style="border-radius:12px"
+loading="lazy"
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+   
+<div class="music-cards">
+
+<div class="music-card">
+<img src="https://i.imgur.com/nHYvenB.jpeg" alt="Portada canción">
+<h3>Las hijas de maruca</h3>
+
+<div class="music-buttons">
+
+<iframe allow="autoplay *; encrypted-media *;"
+frameborder="0"
+height="175"
+style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
+sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+src="https://embed.music.apple.com/mx/song/1846256584">
+</iframe>
+
+<a href="https://www.youtube.com/watch?v=Qf981OP_4t8" target="_blank" class="youtube-btn">
+<i class="fab fa-youtube"></i> YouTube
+</a>
+
+</div>
+</div>
+
+
+<div class="music-card">
+<img src="https://i.imgur.com/bIWLixE.jpeg" alt="Portada canción">
+<h3>Por si no lo sabías</h3>
+
+<div class="music-buttons">
+
+<iframe allow="autoplay *; encrypted-media *;"
+frameborder="0"
+height="175"
+style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
+sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+src="https://embed.music.apple.com/mx/song/1841181092">
+</iframe>
+
+<a href="https://www.youtube.com/watch?v=R18zXCD2FHY" target="_blank" class="youtube-btn">
+<i class="fab fa-youtube"></i> YouTube
+</a>
+
+</div>
+</div>
+
+</div>
+ 
 </div>
 </section>
 
@@ -83,19 +140,36 @@ allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-pictur
 
 <section id="galeria" class="dark reveal">
 <h2>Galería</h2>
-<div class="gallery">
-<img src="https://i.imgur.com/IgTfQ9N.jpeg"
-alt="abuelo">
 
-<img src="https://i.imgur.com/n8Fbjey.jpeg"
-alt="juanito">
+<div class="swiper mySwiper">
 
-<img src="https://i.imgur.com/KQLmPgA.jpeg"
-alt="con tio memo">
+<div class="swiper-wrapper">
 
-<img src="https://i.imgur.com/Rx1zQTs.jpeg"
-alt="Banda tocando música regional mexicana en vivo">
+<div class="swiper-slide">
+<img src="https://i.imgur.com/IgTfQ9N.jpeg" alt="abuelo">
 </div>
+
+<div class="swiper-slide">
+<img src="https://i.imgur.com/n8Fbjey.jpeg" alt="juanito">
+</div>
+
+<div class="swiper-slide">
+<img src="https://i.imgur.com/KQLmPgA.jpeg" alt="con tio memo">
+</div>
+
+<div class="swiper-slide">
+<img src="https://i.imgur.com/Rx1zQTs.jpeg" alt="grupo en vivo">
+</div>
+
+</div>
+
+<div class="swiper-pagination"></div>
+
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+
+</div>
+
 </section>
 
 <section id="contacto" class="reveal">
@@ -140,9 +214,60 @@ target="_blank"
 class="whatsapp">
 <i class="fab fa-whatsapp"></i>
 </a>
+
+<div class="music-float">
+
+<img src="https://i.imgur.com/IgTfQ9N.jpeg" alt="Portada canción">
+
+<div class="music-float-info">
+<span>Ni siquiera como amigo</span>
+
+<a href="https://open.spotify.com/track/6PLm4zeMjBaQ6BkNtGZ0FM" target="_blank">
+Escuchar
+</a>
+
+</div>
+
+</div>
  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper(".mySwiper", {
+loop:true,
+spaceBetween:30,
+centeredSlides:true,
+
+autoplay:{
+delay:4000,
+disableOnInteraction:false,
+},
+
+pagination:{
+el:".swiper-pagination",
+clickable:true,
+},
+
+navigation:{
+nextEl:".swiper-button-next",
+prevEl:".swiper-button-prev",
+},
+
+breakpoints:{
+640:{slidesPerView:1},
+768:{slidesPerView:2},
+1024:{slidesPerView:3}
+}
+
+});
+</script>
+
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script  src="./script.js"></script>
 
