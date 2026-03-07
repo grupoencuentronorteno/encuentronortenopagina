@@ -677,3 +677,20 @@ color:#b68c2f;
 opacity:0.8;
 margin-bottom:20px;
 }
+
+.music-buttons a{
+width:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+}
+
+.spotify-btn,
+.youtube-btn,
+.apple-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+width:100%;
+}
