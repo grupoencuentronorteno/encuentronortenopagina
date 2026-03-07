@@ -42,7 +42,7 @@ nav.style.background = "rgba(0,0,0,0.5)";
 
 // FECHA DEL LANZAMIENTO
 
-const launchDate = new Date("March 07, 2026 1:00:00").getTime();
+const launchDate = new Date("March 07, 2026 17:00:00").getTime();
 
 
 
