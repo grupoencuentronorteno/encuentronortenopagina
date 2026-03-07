@@ -9,18 +9,64 @@
   </head>
     
   <body>
-  <title>Encuentro Norteño | Grupo Norteño Oficial</title>
-<meta name="description" content="Encuentro Norteño es un grupo norteño con acordeón y bajosexto. Escucha nuestra música, mira nuestros videos y contáctanos para eventos.">
-<meta name="keywords" content="Encuentro Norteño, grupo norteño, música norteña, acordeón, bajosexto, Monterrey">
+  <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO PRINCIPAL -->
+<title>Encuentro Norteño | Grupo Encuentro Norteño - Música Norteña en Monterrey</title>
+
+<meta name="description" content="Encuentro Norteño, también conocido como Grupo Encuentro Norteño, es un grupo de música norteña con acordeón y bajosexto.">
+
+<meta name="keywords" content="Encuentro Norteño, Grupo Encuentro Norteño, grupo norteño Monterrey, música norteña, acordeón y bajosexto">
+
 <meta name="author" content="Encuentro Norteño">
+
+<meta name="robots" content="index, follow">
+
+
+<!-- SEO PARA REDES SOCIALES -->
+<meta property="og:title" content="Encuentro Norteño">
+<meta property="og:description" content="Encuentro Norteño - Los Caballeros del Estilo Original. Música norteña con acordeón y bajosexto.">
+<meta property="og:image" content="https://i.imgur.com/rdRuYVe.png">
+<meta property="og:url" content="https://encuentronorteno.com">
+<meta property="og:type" content="website">
+
+
+<!-- SCHEMA PARA GOOGLE -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "MusicGroup",
+"name": "Encuentro Norteño",
+"alternateName": "Grupo Encuentro Norteño",
+"genre": "Regional Mexicano",
+"foundingLocation": "Monterrey, Nuevo León, México",
+"sameAs": [
+"https://www.facebook.com/EncuentroNortenoOfficial",
+"https://www.instagram.com/encuentronortenooficial",
+"https://www.youtube.com/@EncuentroNortenoOficial",
+"https://open.spotify.com"
+]
+}
+</script>
+
+</head>
 
 <div class="concert-lights"></div>
 
+<div id="banner-lanzamiento" class="lanzamiento-banner">
+🔥 NUEVO SENCILLO DISPONIBLE — ESCÚCHALO AHORA
+</div>
+
 <nav>
+   
 <a href="#inicio">Inicio</a>
 <a href="#nosotros">Nosotros</a>
 <a href="#musica">Música</a>
 <a href="#galeria">Galería</a>
+<a href="#fechas">Fechas</a>
 <a href="#contacto">Contacto</a>
 <a href="#redes">Redes</a>
 </nav>
@@ -292,16 +338,46 @@ class="whatsapp">
 
 <div class="music-float">
 
-<img src="https://i.imgur.com/IgTfQ9N.jpeg" alt="Portada canción">
+<img id="cover" src="https://i.imgur.com/IgTfQ9N.jpeg" alt="Portada canción">
 
 <div class="music-float-info">
-<span>Ni siquiera como amigo</span>
 
-<a href="https://open.spotify.com/track/6PLm4zeMjBaQ6BkNtGZ0FM" target="_blank">
-Escuchar
-</a>
+<span id="song-title">Ni siquiera como amigo</span>
+
+<div class="controls">
+
+<button id="prev">
+<i class="fas fa-backward"></i>
+</button>
+
+<button id="play">
+<i class="fas fa-play"></i>
+</button>
+
+<button id="next">
+<i class="fas fa-forward"></i>
+</button>
 
 </div>
+
+<div class="progress-container">
+<div id="progress"></div>
+</div>
+
+<div class="time">
+<span id="current">0:00</span>
+<span id="duration">0:00</span>
+</div>
+
+<div class="equalizer">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</div>
+
+<audio id="player"></audio>
 
 </div>
  
