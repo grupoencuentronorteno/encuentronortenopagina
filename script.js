@@ -244,3 +244,43 @@ const dur=player.duration;
 player.currentTime=(clickX/width)*dur;
 
 });
+
+const counters=document.querySelectorAll(".count");
+
+counters.forEach(counter=>{
+
+const update=()=>{
+
+const target=+counter.getAttribute("data-count");
+const current=+counter.innerText;
+
+const increment=target/120;
+
+if(current<target){
+
+counter.innerText=Math.ceil(current+increment);
+
+setTimeout(update,20);
+
+}else{
+
+counter.innerText=target.toLocaleString();
+
+}
+
+};
+
+update();
+
+});
+
+
+function abrirPost(url){
+document.getElementById("instaModal").style.display="flex";
+document.getElementById("instaFrame").src = url;
+}
+
+function cerrarPost(){
+document.getElementById("instaModal").style.display="none";
+document.getElementById("instaFrame").src="";
+}
